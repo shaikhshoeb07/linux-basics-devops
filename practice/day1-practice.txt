@@ -1,0 +1,6 @@
+Day 1 Practice:
+- Created directories using mkdir
+- Created files using touch
+- Navigated directories using cd
+- Viewed files using cat and less
+- Searched logs using grep
