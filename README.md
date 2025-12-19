@@ -29,3 +29,6 @@ my learning and outputs.
 - Linux permissions
 - Processes and services
 - Shell scripting basics
+
+##LEARN FROM YOUTUBE
+-https://youtu.be/39oyFIStuaI?si=Hg-k6egl0fjw7-dL
