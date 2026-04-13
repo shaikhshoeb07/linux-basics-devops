@@ -14,3 +14,28 @@ insert content
 ctrl + x // save & exit // press Y
 ls  // check file created or not
 cat file2 // to view content
+
+
+cat >file2
+ls
+cat <file2
+cat >>file1
+cat >> file2
+cat file2
+cat <file2
+cat >file1
+cat >file3
+cat file2 file3 >all
+cat all
+clear
+cat >file2
+cat <file2
+cat >> file2
+cat file2
+cat file2 file3 >file4
+cat file4
+vi fli
+cat fli
+nano d2
+cat d2
+ls
