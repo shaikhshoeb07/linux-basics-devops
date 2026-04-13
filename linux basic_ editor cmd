@@ -39,3 +39,25 @@ cat fli
 nano d2
 cat d2
 ls
+rm -rf file
+  534  ls -a
+  535  rm -rf .filea
+  536  ls -a
+  537  cat all
+  538  rm -rf all
+  539  ls -a
+  540  cat .profile
+  541  ls -a
+  542  cat d2
+  543  rm -rf d2
+  544  clear
+  549  mkdir di1 di2 .di3
+  550  ls -al
+  552  mkdir -p d1/d2/d3
+  554  cd d1
+  555  ls
+  556  cd d2
+  557  ls
+  558  cd d3
+  559  ls
+  560  cd../../..
