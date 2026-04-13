@@ -1,0 +1,16 @@
++++++++++++++++++++++++++++ vi cmd++++++++++++++++++++++++++++++++++
+vi file1 // open editor
+// press i
+insert content 
+//press ESC
+ls  // check file created or not
+:wq  // to save and exit
+:q   // to quit and exit
+cat file1 // to view content
+
+++++++++++++++++++++++++++ nano cmd ++++++++++++++++++++++++++++++++
+nano file 2 // create a file
+insert content
+ctrl + x // save & exit // press Y
+ls  // check file created or not
+cat file2 // to view content
