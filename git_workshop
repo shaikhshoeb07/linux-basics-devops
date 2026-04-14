@@ -1,0 +1,97 @@
+1. From your shell, install Git using apt-get:
+
+1$ sudo apt-get update
+2$ sudo apt-get install git
+
+2. Verify the installation was successful by typing git --version:
+
+1$ git --version
+2 git version 2.43.0
+
+3. Configure your Git username and email using the following commands, replacing Emma's name with your own. These details will be associated with any commits that you create:
+
+1$ git config --global user.name "shaikhshoeb07"
+2$ git config --global user.email "shaikh726207@gmail.com"
+
+4. check config 
+cmd : git config --list
+
+5.check location git
+cmd : which git 
+
+Step 3: Core Git Concepts (The Mental Model)
+
+Working Directory: Where you edit files
+Staging Area (Index): Files you prepare for commit (git add)
+Repository (.git folder): Where commits are stored
+Commit: A snapshot of your changes with a message
+Branch: A parallel line of development (e.g., main, feature/login)
+Remote: Usually GitHub/GitLab/Bitbucket (e.g., origin)
+
+Step 4: Essential Git Commands (Start Here)
+Initialize or Clone a Project
+git init                  # Create new repo in current folder
+git clone <url>           # Download existing repo (e.g., from GitHub)
+
+Day-to-Day Workflow
+
+git status                # See what's changed
+git add file.txt          # Stage a file (or git add . for all)
+git add -p                # Stage specific changes interactively (great habit!)
+git commit -m "Add login form"   # Commit with message
+
+View History
+
+git log                   # Full history
+git log --oneline --graph # Compact visual history OR git log --oneline
+git diff                  # See unstaged changes
+git show <commit-hash>    # See what a specific commit changed
+
+Branching (One of Git's Superpowers)
+
+git branch                # List branches
+git switch -c feature/new-ui   # Create and switch to new branch (modern way)
+# or older: git checkout -b feature/new-ui // change branch to master or master to branch
+git delete -d  <branch_name>  // To delete branch  
+
+git switch main           # Switch back to main
+git merge feature/new-ui  # Merge your feature into main
+Working with Remote (GitHub)
+
+Create a repo on GitHub.com
+
+Link your local repo:
+
+git remote add origin https://github.com/yourusername/yourrepo.git
+
+Push:
+
+git push -u origin main
+
+// enter usr name & pswd of github
+
+Pull latest changes:
+
+git pull origin main
+
+// git commit check
+git log --oneline
+practice:
+
+sudo su
+mkdir myblog1
+ls
+cd myblog1
+git init
+cat >myblog
+// put content my 1st blog
+git status // check commit or not
+git add .  OR git add myblog
+git commit -m  "my 1st git code" // committed from working directry to stage 
+git log // check message
+git show <commit_id starting 7 words>
+git remote add origin <repo_url>
+git push -u origin master
+// enter usrname and pswd github
+
+git log --grep " commit"  // when u dont remember commit id
