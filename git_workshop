@@ -51,11 +51,11 @@ Branching (One of Git's Superpowers)
 
 git branch                # List branches
 git switch -c feature/new-ui   # Create and switch to new branch (modern way)
-# or older: git checkout -b feature/new-ui // change branch to master or master to branch
+# or older: git checkout -b feature/new-ui // switch(change) branch to master or master to branch
 git delete -d  <branch_name>  // To delete branch  
 
 git switch main           # Switch back to main
-git merge feature/new-ui  # Merge your feature into main
+git merge <branch_name> # Merge your feature into main
 Working with Remote (GitHub)
 
 Create a repo on GitHub.com
