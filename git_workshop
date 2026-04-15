@@ -98,7 +98,7 @@ cat > file2
 git add .
 git status
 git commit -m  "this is test file"
-git log --online  // take id using this cmd 
+git log --oneline  // take id using this cmd 
 git revert <commit_id> 
 git status
 git log
@@ -107,7 +107,7 @@ git log
 cmd : git tag -a important -m "this is imp commit file" <commit_id>
 
 step:
-git log --online           // take id using this cmd
+git log --oneline           // take id using this cmd
 git tag -a important -m " this imp file" <commit_id>
 git tag                   // check all tags
 git show important        // check imp tag
