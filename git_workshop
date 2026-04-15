@@ -75,7 +75,46 @@ Pull latest changes:
 git pull origin main
 
 // git commit check
-git log --oneline
+cmd : git log --oneline
+
+// git RESET from staging area
+cmd : git reset .
+
+step :
+ git branch
+cat > file1
+git add .
+git status
+git reset .
+git status
+git reset --hard // permenently deleted
+
+// git REVERT from commit area
+cmd : git revert <commit_id>
+
+step:
+git branch
+cat > file2
+git add .
+git status
+git commit -m  "this is test file"
+git log --online  // take id using this cmd 
+git revert <commit_id> 
+git status
+git log
+
+// TAG command use for special commit tag
+cmd : git tag -a important -m "this is imp commit file" <commit_id>
+
+step:
+git log --online           // take id using this cmd
+git tag -a important -m " this imp file" <commit_id>
+git tag                   // check all tags
+git show important        // check imp tag
+git tag -d important      // to delete tag
+git tag                   // check deleted or not
+
+
 practice:
 
 sudo su
